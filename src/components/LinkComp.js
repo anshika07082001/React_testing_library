@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const LinkComp = () => {
-  let [style, setStyle] = useState("");
+  let [style, setStyle] = useState("normal");
   // function sets the hovered class on mouse over
   const hoverFunc = () => {
     setStyle("hovered");

@@ -4,12 +4,16 @@ const FormComp = () => {
   return (
     <form data-testid="form__element">
       <input placeholder="name" />
-      <select data-testid="form__select">
+      <select aria-label="Select any Field">
         <option hidden>Select</option>
         <option>1</option>
         <option>2</option>
       </select>
-      <input type="checkbox" data-testid="form__checkInput" />
+      <input
+        type="checkbox"
+        aria-label="please check the field to continue"
+        data-testid="form__checkInput"
+      />
       <button aria-label="button">Submit</button>
     </form>
   );
